@@ -217,7 +217,7 @@
 * ニフティクラウドmobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 
-#### ロジック
+#### ロジック その１
  * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッドにAPNsに対してデバイストークンの要求するコードを記述し、デバイストークンが取得された後に呼び出される`didRegisterForRemoteNotificationsWithDeviceToken`メソッドを追記をします
  * デバイストークンの要求はiOSのバージョンによってコードが異なります
 
@@ -284,34 +284,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    // 端末情報を上書き保存するupdateExistInstallationメソッドを用意
-    func updateExistInstallation(currentInstallation : NCMBInstallation){
-        let installationQuery = NCMBInstallation.query()
-        installationQuery.whereKey("deviceToken", equalTo:currentInstallation.deviceToken)
-        do {
-            let searchDevice = try installationQuery.getFirstObject()
-            // 端末情報の検索に成功した場合
-            // 上書き保存する
-            currentInstallation.objectId = searchDevice.objectId
-            currentInstallation.saveInBackgroundWithBlock { (error: NSError!) -> Void in
-                if (error != nil){
-                    // 端末情報の登録に失敗した時の処理
-                    print("NG")
-
-                }else{
-                    // 端末情報の登録に成功した時の処理
-                    print("OK")
-
-                }
-            }
-        } catch let searchErr as NSError {
-            // 端末情報の検索に失敗した場合の処理
-
-        }
-    }
-
 }
 ```
+
+#### ロジック その２
+##### 取得
+
+* `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています。
+*  `.allkey()`で、フィールドを全件取得できます。
+    * `.objectForKey()`で、フィールドの中身を取り出すことができます。
+
+##### 更新
+
+
 
 ## 参考
 * ニフティクラウドmobile backend の[ドキュメント（プッシュ通知）](http://mb.cloud.nifty.com/doc/current/push/basic_usage_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
