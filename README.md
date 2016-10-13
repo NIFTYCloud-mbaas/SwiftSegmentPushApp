@@ -1,10 +1,10 @@
-# 【iOS Swift】アプリにプッシュ通知を組み込もう！グループ配信編
+# 【iOS Swift】アプリにプッシュ通知を組み込もう！～グループ配信編
 
 ![画像1](/readme-img/001.png)
 
 ## 概要
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を利用したサンプル！
-*アプリ側からグループ配信を設定しよう！
+* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を利用したサンプルプロジェクトです！
+* アプリ側からグループ配信を設定しよう！
 * 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます！！
 
 ## ニフティクラウドmobile backendって何？？
