@@ -15,8 +15,8 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* Mac OS X 10.10(Yosemite)
-* Xcode ver. 7.2.1
+* Mac OS X 10.10.5(Yosemite)
+* Xcode ver. 7.0.1
 * iPhone6 ver. 8.2
  * このサンプルアプリは、実機ビルドが必要です
 * Lightningケーブル
@@ -213,7 +213,7 @@
 
 ## サンプルの使い方
 * 初期状態はこのような状態になっており、channelsの編集と新しいフィールドの追加ができます。
-* channelsは`「,」`で区切ることで、配列として処理することができます
+* channelsは`,`で区切ることで、配列として処理することができます
 * 追加した後、送信ボタンを押すとviewが自動でリロードされ、追加・更新が行われていることがわかります。追加したフィールドは編集が可能です。
 * ダッシュボードからも更新ができていることが確認してみましょう！
 
@@ -300,7 +300,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 * `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています。
 *  `.allkey()`で、フィールドを全件取得できます。
-    * `.objectForKey()`で、フィールドの中身を取り出すことができます。
+* `.objectForKey()`で、指定したフィールドの中身を取り出すことができます。
 
 ##### ロジック
 * `postInstallation`メソッド内で行います。
