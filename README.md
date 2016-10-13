@@ -1,10 +1,10 @@
-# 【iOS Swift】アプリにプッシュ通知を組み込もう！～グループ配信編
+# 【iOS Swift】アプリ側からプッシュ通知の設定をしよう〜グループ配信編〜
 
 ![画像1](/readme-img/001.png)
 
 ## 概要
 * [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を利用したサンプルプロジェクトです！
-* アプリ側からグループ配信を設定しよう！
+* アプリ側からプッシュ通知のグループ配信を設定することができます。
 * 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます！！
 
 ## ニフティクラウドmobile backendって何？？
@@ -283,6 +283,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+
+    // 端末情報を上書き保存するupdateExistInstallationメソッドを用意
+    func updateExistInstallation(currentInstallation : NCMBInstallation){
+        let installationQuery = NCMBInstallation.query()
+        installationQuery.whereKey("deviceToken", equalTo:currentInstallation.deviceToken)
+        do {
+            let searchDevice = try installationQuery.getFirstObject()
+            // 端末情報の検索に成功した場合
+            // 上書き保存する
+            currentInstallation.objectId = searchDevice.objectId
+            currentInstallation.saveInBackgroundWithBlock { (error: NSError!) -> Void in
+                if (error != nil){
+                    // 端末情報の登録に失敗した時の処理
+                    print("NG")
+
+                }else{
+                    // 端末情報の登録に成功した時の処理
+                    print("OK")
+
+                }
+            }
+        } catch let searchErr as NSError {
+            // 端末情報の検索に失敗した場合の処理
+
+        }
+    }
+
 }
 ```
 
