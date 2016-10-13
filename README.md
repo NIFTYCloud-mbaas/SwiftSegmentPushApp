@@ -210,6 +210,10 @@
 * 端末を確認しましょう！
 * 少し待つとプッシュ通知が届きます！！！
 
+
+## サンプルの使い方
+
+
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
 
@@ -298,7 +302,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
 * 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
-
 
 
 ## 参考
