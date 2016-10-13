@@ -235,7 +235,7 @@
 //  AppDelegate.swift
 //  SwiftPushApp
 //
-//  Created by Natsumo Ikeda on 2016/06/09.
+//  Created by Yuko Sunagawa on 2016/10/03.
 //  Copyright © 2016年 NIFTY Corporation. All rights reserved.
 //
 
@@ -296,14 +296,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-#### ロジック その２
-##### 取得
+#### 取得ロジック
 
 * `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています。
 *  `.allkey()`で、フィールドを全件取得できます。
     * `.objectForKey()`で、フィールドの中身を取り出すことができます。
 
-##### 更新
+##### ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
 * 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
