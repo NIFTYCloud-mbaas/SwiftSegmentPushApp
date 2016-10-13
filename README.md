@@ -295,6 +295,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     * `.objectForKey()`で、フィールドの中身を取り出すことができます。
 
 ##### 更新
+* `postInstallation`メソッド内で行います。
+* `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
+* 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
 
 
 
