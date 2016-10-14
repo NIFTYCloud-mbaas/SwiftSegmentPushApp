@@ -176,7 +176,7 @@
  * ②開発用証明書(.cer)・⑤プロビジョニングプロファイル・⑦APNs用証明書(.p12)
 　 
  　
-　
+
 ### 1. [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成と設定
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 　
@@ -193,19 +193,19 @@
 ![画像5](/readme-img/005.png)
 　
 　
-　
+
 ### 2. [GitHub](https://github.com/natsumo/SwiftPushApp.git)からサンプルプロジェクトのダウンロード
 　
 * この画面([GitHub](https://github.com/u-sandriver/SwiftSegmentPushApp.git))の![画像10](/readme-img/010.png)ボタンをクリックし、さらに![画像11](/readme-img/011.PNG)ボタンをクリックしてサンプルプロジェクトをMacにダウンロードします
-　
-　
-　　
-　
+
+
+
+
 ### 3. Xcodeでアプリを起動
 * ダウンロードしたフォルダを開き、![画像09](/readme-img/009.png)をダブルクリックしてXcode開きます　![画像08](/readme-img/008.png)
 　
 ![画像6](/readme-img/006.png)
-　
+
 #### APIキーの設定
 　
 * `AppDelegate.swift`を編集します
@@ -216,9 +216,9 @@
 * それぞれ`YOUR_NCMB_APPLICATION_KEY`と`YOUR_NCMB_CLIENT_KEY`の部分を書き換えます
  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
 * 書き換え終わったら`command + s`キーで保存をします
-　
-　
-　
+
+
+
 ### 4. 実機ビルド
 * 始めて実機ビルドをする場合は、Xcodeにアカウント（AppleID）の登録をします
  * メニューバーの「Xcode」＞「Preferences...」を選択します
@@ -250,9 +250,9 @@
 * __ビルド時にエラーが発生した場合の対処方法__
  * Xcodeのバージョンが古い場合`import NCMB`にエラーが発生し、上手くSDKが読み込めないことがあります
  * その場合は[【Swift】SDKの読み込みにuse framework!が使えない場合の対処方法](http://goo.gl/Z1D0K3)をご覧いただき、別の読み込み方法をお試しください
-　
-　
-　
+
+
+
 ### 5.動作確認
 * インストールしたアプリを起動します
  * プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
@@ -262,9 +262,8 @@
 ![画像12](/readme-img/012.png)
 　
 * 端末側で起動したアプリは一度閉じておきます
-　
-　
-　
+
+
 ### 6.__プッシュ通知を送りましょう！__
 * いよいよです！実際にプッシュ通知を送ってみましょう！
 * [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
@@ -276,38 +275,37 @@
 * 端末を確認しましょう！
 * 少し待つとプッシュ通知が届きます！！！
 　
-　
-　
+
+
 ## サンプルの使い方
 ![画像cap1](/readme-img/cap01.png)
-　
+
 * 初期状態はこのような状態になっており、channelsの編集と新しいフィールドの追加ができます。
-　
-　　
-　
+
+
 ![画像cap2](/readme-img/cap02.png)
 　
 * channelsの編集と、新しいフィールドの追加をしてみましょう。
 * channelsは`,`で区切ることで、配列として処理することができます。
 * 編集が完了したら送信ボタンをタップして下さい。
-　
-　
-　
+
+
+
 ![画像cap3](/readme-img/cap03.png)
 　
 * 追加した後、送信ボタンを押すとviewが自動でリロードされ、追加・更新が行われていることがわかります。追加したフィールドは後から編集することが可能です。
 * ダッシュボードから、更新ができていることを確認してみましょう！
-　
-　
-　
+
+
+
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
-　
+
 #### SDKのインポートと初期設定
 * ニフティクラウド mobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 　
-　
+
 #### ロジック
  * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッドにAPNsに対してデバイストークンの要求するコードを記述し、デバイストークンが取得された後に呼び出される`didRegisterForRemoteNotificationsWithDeviceToken`メソッドを追記をします
  * デバイストークンの要求はiOSのバージョンによってコードが異なります
