@@ -265,7 +265,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 ## 参考
-* ニフティクラウド mobile backend の[ドキュメント（プッシュ通知）](http://mb.cloud.nifty.com/doc/current/push/basic_usage_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
- * [Swiftでプッシュ通知を送ろう！](http://qiita.com/natsumo/items/8ffafee05cb7eb69d815)
-* 同じ内容の【Objective-C】版もご用意しています
- * https://github.com/natsumo/ObjcPushApp
+* 同じ内容の【Objective-C】版も作成しておりますのでお待ちください。
