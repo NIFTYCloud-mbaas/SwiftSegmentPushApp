@@ -9,7 +9,7 @@
 
 ## 目次
 * [ニフティクラウド mobile backendって何？？](#ニフティクラウド mobile backendって何？？)
-* [プッシュ通知の仕組み](https://github.com/u-sandriver/SwiftSegmentPushApp#%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF)
+* [プッシュ通知の仕組み](#プッシュ通知の仕組み)
 * [作業の手順](https://github.com/u-sandriver/SwiftSegmentPushApp#%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%89%8B%E9%A0%86)
 * [サンプルアプリの使い方](https://github.com/u-sandriver/SwiftSegmentPushApp#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
 * [コードの解説](https://github.com/u-sandriver/SwiftSegmentPushApp#%E8%A7%A3%E8%AA%AC)
