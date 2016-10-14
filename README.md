@@ -85,12 +85,12 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 
 ### 3. Xcodeでアプリを起動
-* ダウンロードしたフォルダを開き、「__SwiftPayloadApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
+* ダウンロードしたフォルダを開き、「__SwiftSegmentPushdApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
 
 ![画像09](/readme-img/009.png)
 ![画像06](/readme-img/006.png)
 
-* 「SwiftPayloadApp.xcodeproj」（青い方）ではないので注意してください！
+* 「SwiftSegmentpushApp.xcodeproj」（青い方）ではないので注意してください！
 
 ![画像08](/readme-img/008.png)
 
