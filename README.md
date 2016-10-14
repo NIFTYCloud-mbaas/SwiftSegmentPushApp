@@ -85,21 +85,14 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 
 ### 3. Xcodeでアプリを起動
-* ダウンロードしたフォルダを開き、![画像09](/readme-img/009.png)をダブルクリックしてXcode開きます　![画像08](/readme-img/008.png)
-　
-![画像6](/readme-img/006.png)
+* ダウンロードしたフォルダを開き、「__SwiftPayloadApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
 
-#### APIキーの設定
-　
-* `AppDelegate.swift`を編集します
-* 先程[ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
-　
-![画像07](/readme-img/007.png)
-　
-* それぞれ`YOUR_NCMB_APPLICATION_KEY`と`YOUR_NCMB_CLIENT_KEY`の部分を書き換えます
- * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
-* 書き換え終わったら`command + s`キーで保存をします
+![画像09](/readme-img/009.png)
+![画像06](/readme-img/006.png)
 
+* 「SwiftPayloadApp.xcodeproj」（青い方）ではないので注意してください！
+
+![画像08](/readme-img/008.png)
 
 
 ### 4. 実機ビルド
