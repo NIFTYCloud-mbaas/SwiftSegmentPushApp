@@ -190,7 +190,7 @@
 
 ![画像6](/readme-img/006.png)
 
-## APIキーの設定
+#### APIキーの設定
 
 * `AppDelegate.swift`を編集します
 * 先程[ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
