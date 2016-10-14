@@ -10,9 +10,9 @@
 ## 目次
 * [ニフティクラウド mobile backendって何？？](#ニフティクラウド mobile backendって何？？)
 * [プッシュ通知の仕組み](#プッシュ通知の仕組み)
-* [作業の手順](https://github.com/u-sandriver/SwiftSegmentPushApp#%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%89%8B%E9%A0%86)
-* [サンプルアプリの使い方](https://github.com/u-sandriver/SwiftSegmentPushApp#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
-* [コードの解説](https://github.com/u-sandriver/SwiftSegmentPushApp#%E8%A7%A3%E8%AA%AC)
+* [作業の手順](#作業の手順)
+* [サンプルアプリの使い方](#サンプルの使い方)
+* [コードの解説](#解説)
 
 ## ニフティクラウド mobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
@@ -41,7 +41,7 @@
  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
-* これから以下の作業を行います（少し長いです）。
+* これから、次のような流れで作業を行います（少し長いので休憩しつつ行うことをオススメします）。
 
 0. [プッシュ通知機能を使うための準備](https://github.com/u-sandriver/SwiftSegmentPushApp#0%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E3%81%86%E3%81%9F%E3%82%81%E3%81%AE%E6%BA%96%E5%82%99)
 1. [ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定](https://github.com/u-sandriver/SwiftSegmentPushApp#1-%E3%83%8B%E3%83%95%E3%83%86%E3%82%A3%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89-mobile-backend%E3%81%AE%E4%BC%9A%E5%93%A1%E7%99%BB%E9%8C%B2%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E6%88%90%E3%81%A8%E8%A8%AD%E5%AE%9A)
