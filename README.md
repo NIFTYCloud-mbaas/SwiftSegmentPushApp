@@ -8,11 +8,11 @@
 * 簡単な操作ですぐに [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます！！
 
 ## 目次
-* ニフティクラウド mobile backendって何？？
-* プッシュ通知の仕組み
-* 作業の手順
-* サンプルアプリの使い方
-* コードの解説
+* [ニフティクラウド mobile backendって何？？](https://github.com/u-sandriver/SwiftSegmentPushApp#%E7%9B%AE%E6%AC%A1)
+* [プッシュ通知の仕組み](https://github.com/u-sandriver/SwiftSegmentPushApp#%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF)
+* [作業の手順](https://github.com/u-sandriver/SwiftSegmentPushApp#%E4%BD%9C%E6%A5%AD%E3%81%AE%E6%89%8B%E9%A0%86)
+* [サンプルアプリの使い方](https://github.com/u-sandriver/SwiftSegmentPushApp#%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
+* [コードの解説](https://github.com/u-sandriver/SwiftSegmentPushApp#%E8%A7%A3%E8%AA%AC)
 
 ## ニフティクラウド mobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
@@ -43,13 +43,13 @@
 ## 作業の手順
 * これから以下の作業を行います（少し長いです）。
 
-0. プッシュ通知機能を使うための準備
-1. ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定
-2. GitHubからサンプルプロジェクトのダウンロード
-3. Xcodeでアプリを起動
-4. 実機ビルド
-5. 動作確認
-6. プッシュ通知を送りましょう！
+0. [プッシュ通知機能を使うための準備](https://github.com/u-sandriver/SwiftSegmentPushApp#0%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E3%81%86%E3%81%9F%E3%82%81%E3%81%AE%E6%BA%96%E5%82%99)
+1. [ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定](https://github.com/u-sandriver/SwiftSegmentPushApp#1-%E3%83%8B%E3%83%95%E3%83%86%E3%82%A3%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89-mobile-backend%E3%81%AE%E4%BC%9A%E5%93%A1%E7%99%BB%E9%8C%B2%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E6%88%90%E3%81%A8%E8%A8%AD%E5%AE%9A)
+2. [GitHubからサンプルプロジェクトのダウンロード](https://github.com/u-sandriver/SwiftSegmentPushApp#2-github%E3%81%8B%E3%82%89%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)
+3. [Xcodeでアプリを起動](https://github.com/u-sandriver/SwiftSegmentPushApp#3-xcode%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%B5%B7%E5%8B%95)
+4. [実機ビルド](https://github.com/u-sandriver/SwiftSegmentPushApp#4-%E5%AE%9F%E6%A9%9F%E3%83%93%E3%83%AB%E3%83%89)
+5. [動作確認](https://github.com/u-sandriver/SwiftSegmentPushApp#5%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
+6. [プッシュ通知を送りましょう！](https://github.com/u-sandriver/SwiftSegmentPushApp#6%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%82%92%E9%80%81%E3%82%8A%E3%81%BE%E3%81%97%E3%82%87%E3%81%86)
 
 ### 0.プッシュ通知機能を使うための準備
 * 準備作業が少し複雑です
@@ -190,7 +190,7 @@
 
 ![画像6](/readme-img/006.png)
 
-### 3. APIキーの設定
+## APIキーの設定
 
 * `AppDelegate.swift`を編集します
 * 先程[ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)のダッシュボード上で確認したAPIキーを貼り付けます
