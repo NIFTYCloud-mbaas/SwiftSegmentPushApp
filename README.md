@@ -145,7 +145,7 @@
 
 ### 2. [GitHub](https://github.com/natsumo/SwiftPushApp.git)からサンプルプロジェクトのダウンロード
 
-* この画面([GitHub](https://github.com/natsumo/SwiftPushApp.git))の![画像10](/readme-img/010.png)ボタンをクリックし、さらに![画像11](/readme-img/011.PNG)ボタンをクリックしてサンプルプロジェクトをMacにダウンロードします
+* この画面([GitHub](https://github.com/u-sandriver/SwiftSegmentPushApp.git))の![画像10](/readme-img/010.png)ボタンをクリックし、さらに![画像11](/readme-img/011.PNG)ボタンをクリックしてサンプルプロジェクトをMacにダウンロードします
 
 ### 3. Xcodeでアプリを起動
 
@@ -309,7 +309,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 *  `.allkey()`で、フィールドを全件取得できます。
 * `.objectForKey()`で、指定したフィールドの中身を取り出すことができます。
 
-#### 送信ロジック
+#### 更新ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
 * 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
