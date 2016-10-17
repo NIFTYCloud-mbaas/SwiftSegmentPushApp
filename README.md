@@ -182,7 +182,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 　
 
-#### ロジック
+#### deviceToken取得ロジック
  * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッドにAPNsに対してデバイストークンの要求するコードを記述し、デバイストークンが取得された後に呼び出される`didRegisterForRemoteNotificationsWithDeviceToken`メソッドを追記をします
  * デバイストークンの要求はiOSのバージョンによってコードが異なります
 　
@@ -252,7 +252,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-#### 取得ロジック
+#### installation取得ロジック
 
 * `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています。
 *  `.allkey()`で、フィールドを全件取得できます。
@@ -272,7 +272,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 ```
 
-#### 更新ロジック
+#### installation更新ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
 ```Swift
