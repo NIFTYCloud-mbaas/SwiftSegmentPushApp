@@ -269,6 +269,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               //取得成功時の処理
                print("取得成功:\(installation)")
              }
+        }
 ```
 
 #### 更新ロジック
