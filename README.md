@@ -274,6 +274,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 #### 更新ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
+```Swift
+        
+        installation!.saveInBackgroundWithBlock({( error: NSError!)-> Void in
+            if error != nil{
+                //installation更新失敗時の処理
+            } else {
+                //insitallation更新成功時の処理
+                print("installation更新に成功しました")
+            }
+         })
+```
 * 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
 
 
