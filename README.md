@@ -258,6 +258,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 *  `.allkey()`で、フィールドを全件取得できます。
 * `.objectForKey()`で、指定したフィールドの中身を取り出すことができます。
 
+```Swift
+//installationの生成
+        let installation = NCMBInstallation.currentInstallation()
+        
+        //ローカルのinstallationをfetchして更新
+        installation.fetchInBackgroundWithBlock { (error: NSError!) -> Void in
+            
+            if installation != nil{
+              //取得成功時の処理
+               print("取得成功:\(installation)")
+             }
+```
+
 #### 更新ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
