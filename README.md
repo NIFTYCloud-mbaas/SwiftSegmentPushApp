@@ -136,7 +136,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 　
 ![画像12](/readme-img/012.png)
-　
+
+
 #### アプリの使い方
 
 ![画像cap1](/readme-img/cap01.png)
