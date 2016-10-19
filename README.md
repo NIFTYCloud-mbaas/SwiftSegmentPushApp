@@ -86,8 +86,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * ダウンロードしたフォルダを開き、「__SwiftSegmentPushdApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
 
 ![画像09](/readme-img/009.png)
-![画像06](/readme-img/006.png)
 
+![画像i25](/readme-img/i025.png)
 * 「SwiftSegmentpushApp.xcodeproj」（青い方）ではないので注意してください！
 
 ![画像08](/readme-img/008.png)
@@ -107,8 +107,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
  ![図F3.png](/readme-img/b030.png)
 　
 * プロジェクトをクリックして、「Build Settings」＞「Code Signing」に②開発用証明書(.cer)と⑤プロビジョニングプロファイルを設定します
-　
-![画像i25](/readme-img/i025.png)
+　![画像06](/readme-img/006.png)
 　
 * 「Code Signing Identity」に②開発用証明書(.cer)を設定しますが、「Provisioning Profile」に作成した⑤プロビジョニングプロファイルを設定すれば、「Code Signing Identity」の部分は「Automatic」で構いません
  * __注意__：作成した⑤プロビジョニングプロファイルは一度ダブルクリックをしておかないと、「Provisioning Profile」に設定できません。
