@@ -41,13 +41,13 @@
 ## 作業の手順
 * これから、次のような流れで作業を行います（少し長いので休憩しつつ行うことをオススメします）。
 
-0. [プッシュ通知機能を使うための準備](https://github.com/u-sandriver/SwiftSegmentPushApp#0%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E3%81%86%E3%81%9F%E3%82%81%E3%81%AE%E6%BA%96%E5%82%99)
-1. [ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定](https://github.com/u-sandriver/SwiftSegmentPushApp#1-%E3%83%8B%E3%83%95%E3%83%86%E3%82%A3%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89-mobile-backend%E3%81%AE%E4%BC%9A%E5%93%A1%E7%99%BB%E9%8C%B2%E3%81%A8%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%A2%E3%83%97%E3%83%AA%E4%BD%9C%E6%88%90%E3%81%A8%E8%A8%AD%E5%AE%9A)
-2. [GitHubからサンプルプロジェクトのダウンロード](https://github.com/u-sandriver/SwiftSegmentPushApp#2-github%E3%81%8B%E3%82%89%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)
-3. [Xcodeでアプリを起動](https://github.com/u-sandriver/SwiftSegmentPushApp#3-xcode%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E8%B5%B7%E5%8B%95)
-4. [実機ビルド](https://github.com/u-sandriver/SwiftSegmentPushApp#4-%E5%AE%9F%E6%A9%9F%E3%83%93%E3%83%AB%E3%83%89)
-5. [動作確認](https://github.com/u-sandriver/SwiftSegmentPushApp#5%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D)
-6. [プッシュ通知を送りましょう！](https://github.com/u-sandriver/SwiftSegmentPushApp#6%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%82%92%E9%80%81%E3%82%8A%E3%81%BE%E3%81%97%E3%82%87%E3%81%86)
+0. [プッシュ通知機能を使うための準備](#1プッシュ通知機能を使うための準備)
+1. [ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定](#2-ニフティクラウド-mobile-backendの会員登録とログインアプリ作成と設定)
+2. [GitHubからサンプルプロジェクトのダウンロード](#3-githubからサンプルプロジェクトのダウンロード)
+3. [Xcodeでアプリを起動](#4-xcodeでアプリを起動)
+4. [実機ビルド](#5-実機ビルド)
+5. [動作確認](#6動作確認)
+6. [プッシュ通知を送りましょう！](#7特定のグループに向けてプッシュ通知を送りましょう)
 
 
 ### 1.プッシュ通知機能を使うための準備
