@@ -11,7 +11,6 @@
 * [ニフティクラウド mobile backendって何？？](#ニフティクラウド mobile backendって何？？)
 * [プッシュ通知の仕組み](#プッシュ通知の仕組み)
 * [作業の手順](#作業の手順)
-* [サンプルアプリの使い方](#サンプルの使い方)
 * [コードの解説](#解説)
 
 ## ニフティクラウド mobile backendって何？？
@@ -26,7 +25,6 @@
 * Xcode ver. 7.0.1
 * iPhone6 ver. 8.2
  * このサンプルアプリは、実機ビルドが必要です
-* Lightningケーブル
 
 ※上記内容で動作確認をしています
 
@@ -52,7 +50,7 @@
 6. [プッシュ通知を送りましょう！](https://github.com/u-sandriver/SwiftSegmentPushApp#6%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%82%92%E9%80%81%E3%82%8A%E3%81%BE%E3%81%97%E3%82%87%E3%81%86)
 
 
-### 0.プッシュ通知機能を使うための準備
+### 1.プッシュ通知機能を使うための準備
 __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/natsumo/iOS_Certificate)__
 * 上記のドキュメントをご覧の上、必要な証明書類の作成をお願いします
  * 証明書の作成には[Apple Developer Program](https://developer.apple.com/account/)の登録（有料）が必要です
@@ -60,7 +58,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像i002](/readme-img/i002.png)
 
 
-### 1. [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成と設定
+### 2. [ニフティクラウド mobile backend](http://mb.cloud.nifty.com/)の会員登録とログイン→アプリ作成と設定
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 　
 ![画像3](/readme-img/003.png)
@@ -77,14 +75,14 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 　
 　
 
-### 2. [GitHub](https://github.com/natsumo/SwiftPushApp.git)からサンプルプロジェクトのダウンロード
+### 3. [GitHub](https://github.com/natsumo/SwiftSegmentPushApp.git)からサンプルプロジェクトのダウンロード
 　
 * 下記リンクをクリックしてプロジェクトをダウンロードをMacにダウンロードします
 
  * __[SwiftSegmentPushApp](https://github.com/u-sandriver/SwiftSegmentPushApp/archive/master.zip)__
 
 
-### 3. Xcodeでアプリを起動
+### 4. Xcodeでアプリを起動
 * ダウンロードしたフォルダを開き、「__SwiftSegmentPushdApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
 
 ![画像09](/readme-img/009.png)
@@ -95,18 +93,18 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像08](/readme-img/008.png)
 
 
-### 4. 実機ビルド
+### 5. 実機ビルド
 * 始めて実機ビルドをする場合は、Xcodeにアカウント（AppleID）の登録をします
  * メニューバーの「Xcode」＞「Preferences...」を選択します
  * Accounts画面が開いたら、左下の「＋」をクリックします。
  * Apple IDとPasswordを入力して、「Add」をクリックします
  　
- ![図F2.png](https://qiita-image-store.s3.amazonaws.com/0/112032/bef843be-5581-9e0f-aad2-1c05626d9e5d.png)
+ ![図F2.png](/readme-img/b029.png)
 　
  * 追加されると、下図のようになります。追加した情報があっていればOKです
  * 確認できたら閉じます。
 　
- ![図F3.png](https://qiita-image-store.s3.amazonaws.com/0/112032/89d9c25c-d4fa-4e93-a454-507c0575f9a3.png)
+ ![図F3.png](/readme-img/b030.png)
 　
 * プロジェクトをクリックして、「Build Settings」＞「Code Signing」に②開発用証明書(.cer)と⑤プロビジョニングプロファイルを設定します
 　
@@ -129,7 +127,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 
 
-### 5.動作確認
+### 6.動作確認
 * インストールしたアプリを起動します
  * プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
@@ -162,7 +160,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * 端末側で起動したアプリは一度閉じておきます
 
 
-### 6.__特定のグループに向けてプッシュ通知を送りましょう！__
+### 7.__特定のグループに向けてプッシュ通知を送りましょう！__
 
 #### まずは普通のプッシュ通知を送る
 
@@ -188,6 +186,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * この場合、上のようにinstallationの絞り込み設定をして、プッシュ通知を作成すると、特定のグループや個人に対してプッシュ通知を送ることができます。
 * 様々な絞り込みを試してみましょう！
 
+//pushの通知の
+//serchconditionの例を載せる
 
 ## 解説
 サンプルプロジェクトに実装済みの内容のご紹介
