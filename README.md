@@ -39,7 +39,7 @@
  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
-* これから、次のような流れで作業を行います（少し長いので休憩しつつ行うことをオススメします）。
+* これから、次のような流れで作業を行います（少し長いので休憩しつつ行うことをオススメします）
 
 0. [プッシュ通知機能を使うための準備](#1プッシュ通知機能を使うための準備)
 1. [ニフティクラウド mobile backendの会員登録とログイン→アプリ作成と設定](#2-ニフティクラウド-mobile-backendの会員登録とログインアプリ作成と設定)
@@ -96,7 +96,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ### 5. 実機ビルド
 * 始めて実機ビルドをする場合は、Xcodeにアカウント（AppleID）の登録をします
  * メニューバーの「Xcode」＞「Preferences...」を選択します
- * Accounts画面が開いたら、左下の「＋」をクリックします。
+ * Accounts画面が開いたら、左下の「＋」をクリックします
  * Apple IDとPasswordを入力して、「Add」をクリックします
  　
  ![図F2.png](/readme-img/b029.png)
@@ -110,7 +110,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 　![画像06](/readme-img/006.png)
 　
 * 「Code Signing Identity」に②開発用証明書(.cer)を設定しますが、「Provisioning Profile」に作成した⑤プロビジョニングプロファイルを設定すれば、「Code Signing Identity」の部分は「Automatic」で構いません
- * __注意__：作成した⑤プロビジョニングプロファイルは一度ダブルクリックをしておかないと、「Provisioning Profile」に設定できません。
+ * __注意__：作成した⑤プロビジョニングプロファイルは一度ダブルクリックをしておかないと、「Provisioning Profile」に設定できません
 * Bundle ID を設定します
 * 「General」＞「Identity」の「Bundle Identifier」に③AppID を作成したときに入力したBundle IDに書き換えてください
 　
@@ -153,20 +153,20 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 今回は、ユーザーの属性を「apple」、「orange」、「banana」の3つのグループに分けます（グループは重複していても良いとします）。「apple」か「orange」、どちらかのグループに入っているユーザーに対してプッシュ通知を送ってみましょう。
 
-* アプリをまず起動しましょう。初期状態はこのような状態になっており、channelsの編集と新しいフィールドの追加ができます。
- * "channnels"は、mBaaSに最初から用意されているフィールドで、任意の配列を入れることができます。今回はグループ分けに使っていますが、使い方は自由です。
+* アプリをまず起動しましょう。初期状態はこのような状態になっており、channelsの編集と新しいフィールドの追加ができます
+ * "channnels"は、mBaaSに最初から用意されているフィールドで、任意の配列を入れることができます。今回はグループ分けに使っていますが、使い方は自由です
 
 ![画像cap1](/readme-img/cap01.png)
 
-* channelsに、"apple,orange"と入れてみましょう。
- * channelsは`,`で区切ることで、配列の要素として処理することができます。
+* channelsに、"apple,orange"と入れてみましょう
+ * channelsは`,`で区切ることで、配列の要素として処理することができます
 * ついでに、新しいフィールドの追加もしてみましょう。"favorite"というフィールドを作り、中身には"music"と入れてみました。こうすることで、ユーザーに新しい属性を付与することができるようになります！
 
-* 編集が完了したら送信ボタンをタップして下さい。
+* 編集が完了したら送信ボタンをタップして下さい
 
 ![画像cap2](/readme-img/cap02.png)
 
-* 送信後、viewが自動でリロードされ、追加・更新が行われていることがわかります。追加したフィールドは後から編集することが可能です。
+* 送信後、viewが自動でリロードされ、追加・更新が行われていることがわかります。追加したフィールドは後から編集することが可能です
 
 ![画像cap3](/readme-img/cap03.png)
 　
@@ -179,16 +179,16 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ##### いよいよグループ配信
 
-* 普通のプッシュ通知を送るときと同様に、プッシュ通知を作成し、「配信端末」を「installationクラスから絞り込み」に設定します。
-* channelsに「apple」と「orange」が含まれている人だけにプッシュ通知を送る場合は、次のように設定します。
+* 普通のプッシュ通知を送るときと同様に、プッシュ通知を作成し、「配信端末」を「installationクラスから絞り込み」に設定します
+* channelsに「apple」と「orange」が含まれている人だけにプッシュ通知を送る場合は、次のように設定します
 
 ![画像cap5](/readme-img/cap05.png)
 
-* 作成をクリックし、少し待つと端末にプッシュ通知が届くはずです。・・・届きましたか？？
+* 作成をクリックし、少し待つと端末にプッシュ通知が届きます。・・・届きましたか？？
 
 ![画像cap6](/readme-img/cap06.png)
 
-* 作成したプッシュ通知の「SearchCondition」を開くとどのように絞りこまれているか確認することができます。
+* 作成したプッシュ通知の「SearchCondition」を開くとどのように絞りこまれているか確認することができます
 
 ![画像7](/readme-img/cap07.png)
 
@@ -282,9 +282,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 #### installation取得ロジック
 
-* `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています。
-*  `.allkey()`で、フィールドを全件取得できます。
-* `.objectForKey()`で、指定したフィールドの中身を取り出すことができます。
+* `ViewController.swift`の`getInstallation`メソッド内でinstallationクラスを生成しています
+*  `.allkey()`で、フィールドを全件取得できます
+* `.objectForKey()`で、指定したフィールドの中身を取り出すことができます
 
 ```Swift
 //installationの生成
@@ -302,7 +302,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 #### installation更新ロジック
 * `postInstallation`メソッド内で行います。
-* `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します。
+* `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します
 ```Swift
         
         installation!.saveInBackgroundWithBlock({( error: NSError!)-> Void in
@@ -314,8 +314,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
          })
 ```
-* 更新後は自動でviewのリロードが実行され、更新内容が書き換わります。
+* 更新後は自動でviewのリロードが実行され、更新内容が書き換わります
 
 
 ## 参考
-* 同じ内容の【Objective-C】版も作成しておりますのでお待ちください。
+* 同じ内容の【Objective-C】版も作成しておりますのでお待ちください
