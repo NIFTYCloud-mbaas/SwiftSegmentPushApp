@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     //********** APIキーの設定 **********
-    let applicationkey = "d16ebff08a06a2e1100ec5d6f7aeec4839ccbcab194b250627eb8086d8c06813"
-    let clientkey      = "1b327932b59351bd45e7fdb67be5689266e0b9418878f326358c8913e14c8782"
+    let applicationkey = "YOUR_NCMB_APPLICATIONKEY"
+    let clientkey      = "YOUR_NCMB_CLIENTKEY"
 
 
 
