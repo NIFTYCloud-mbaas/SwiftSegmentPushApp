@@ -8,12 +8,12 @@
 * 簡単な操作ですぐに [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます！！
 
 ## 目次
-* [ニフクラ mobile backendって何？？](#ニフクラ mobile backendって何？？)
+* [ニフクラ mobile backendって何？？](#ニフクラmobilebackendって何？？)
 * [プッシュ通知の仕組み](#プッシュ通知の仕組み)
 * [作業の手順](#作業の手順)
 * [コードの解説](#解説)
 
-## ニフクラ mobile backendって何？？
+## ニフクラmobilebackendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
 注1：詳しくは[こちら](https://mbaas.nifcloud.com/function.htm)をご覧ください
@@ -21,9 +21,9 @@
 ![画像2](/readme-img/002.png)
 
 ## 動作環境
-* Mac OS X 10.10.5(Yosemite)
-* Xcode ver. 7.0.1
-* iPhone6 ver. 8.2
+* Mac OS X 10.14.4(Mojave)
+* Xcode ver. 11.2
+* iPhone6 ver. 12.1.4
  * このサンプルアプリは、実機ビルドが必要です
 
 ※上記内容で動作確認をしています
@@ -42,7 +42,7 @@
 * これから、次のような流れで作業を行います（少し長いので休憩しつつ行うことをオススメします）
 
 0. [プッシュ通知機能を使うための準備](#1プッシュ通知機能を使うための準備)
-1. [ニフクラ mobile backendの会員登録とログイン→アプリ作成と設定](#2-ニフティクラウド-mobile-backendの会員登録とログインアプリ作成と設定)
+1. [ニフクラ mobile backendの会員登録とログイン→アプリ作成と設定](#2-ニフクラ-mobile-backendの会員登録とログイン→アプリ作成と設定)
 2. [GitHubからサンプルプロジェクトのダウンロード](#3-githubからサンプルプロジェクトのダウンロード)
 3. [Xcodeでアプリを起動](#4-xcodeでアプリを起動)
 4. [実機ビルド](#5-実機ビルド)
@@ -75,7 +75,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 　
 　
 
-### 3. [GitHub](https://github.com/u-sandriver/SwiftSegmentPushApp)からサンプルプロジェクトのダウンロード
+### 3. [GitHub](https://github.com/NIFCLOUD-mbaas/SwiftSegmentPushApp)からサンプルプロジェクトのダウンロード
 　
 * 下記リンクをクリックしてプロジェクトをダウンロードをMacにダウンロードします
 
@@ -118,17 +118,13 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 　
 * 設定は完了です
 * lightningケーブルで④端末の登録で登録した、動作確認用iPhoneをMacにつなぎます
- * 実機ビルドが初めての場合は[こちら](http://qiita.com/natsumo/items/3f1dd0e7f5471bd4b7d9)をご覧いただき、実機ビルドの準備をお願いします
 * Xcode画面で左上で、接続したiPhoneを選び、実行ボタン（さんかくの再生マーク）をクリックします
 * __ビルド時にエラーが発生した場合の対処方法__
  * Xcodeのバージョンが古い場合`import NCMB`にエラーが発生し、上手くSDKが読み込めないことがあります
- * その場合は[【Swift】SDKの読み込みにuse framework!が使えない場合の対処方法](http://goo.gl/Z1D0K3)をご覧いただき、別の読み込み方法をお試しください
-
-
 
 ### 6.動作確認
 * インストールしたアプリを起動します
- * **注意！！！**プッシュ通知の許可を求めるアラートが出たら、**必ず許可してください！**
+ * **注意！！！** プッシュ通知の許可を求めるアラートが出たら、**必ず許可してください！**
 * 起動されたらこの時点でデバイストークンが取得されます
 * [ニフクラ mobile backend](https://mbaas.nifcloud.com/)のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 　
@@ -154,7 +150,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 今回は、ユーザーの属性を「apple」、「orange」、「banana」の3つのグループに分けます（グループは重複していても良いとします）。「apple」か「orange」、どちらかのグループに入っているユーザーに対してプッシュ通知を送ってみましょう。
 
 * アプリをまず起動しましょう。初期状態はこのような状態になっており、channelsの編集と新しいフィールドの追加ができます
- * "channnels"は、mBaaSに最初から用意されているフィールドで、任意の配列を入れることができます。今回はグループ分けに使っていますが、使い方は自由です
+ * "channels"は、mBaaSに最初から用意されているフィールドで、任意の配列を入れることができます。今回はグループ分けに使っていますが、使い方は自由です
 
 ![画像cap1](/readme-img/cap01.png)
 
@@ -199,7 +195,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 #### まとめると
 
 * 上のようにinstallationの絞り込み設定をしてプッシュ通知を作成することで、特定のグループや個人に対してプッシュ通知を送ることができます！！
- * 「ｆａｖｏｒｉｔｅ」が「music」のユーザーにだけ配信や、ある特定のユーザーにだけ配信ということも出来ます。
+ * 「favorite」が「music」のユーザーにだけ配信や、ある特定のユーザーにだけ配信ということも出来ます。
 * 様々な絞り込みを試してみましょう！
 
 
@@ -216,58 +212,41 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ```swift
 import UIKit
 import NCMB
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
     var window: UIWindow?
-    //********** APIキーの設定 **********
-    let applicationkey = "YOUR_NCMB_APPLICATIONKEY"
-    let clientkey      = "YOUR_NCMB_CLIENTKEY"
-
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    
+    // APIキーの設定
+    let applicationkey = "YOUR-APPLICATION-KEY"
+    let clientkey      = "YOUR-CLIENT-KEY"
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //********** SDKの初期化 **********
-        NCMB.setApplicationKey(applicationkey, clientKey: clientkey)
         
-        /// デバイストークンの要求
-        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1){
-            /** iOS8以上 **/
-             //通知のタイプを設定したsettingを用意
-            let type : UIUserNotificationType = [.Alert, .Badge, .Sound]
-            let setting = UIUserNotificationSettings(forTypes: type, categories: nil)
-            //通知のタイプを設定
-            application.registerUserNotificationSettings(setting)
-            //DevoceTokenを要求
-            application.registerForRemoteNotifications()
-        }else{
-            /** iOS8未満 **/
-            let type : UIRemoteNotificationType = [.Alert, .Badge, .Sound]
-            UIApplication.sharedApplication().registerForRemoteNotificationTypes(type)
-        }
-
+        // SDKの初期化
+        NCMB.initialize(applicationKey: applicationkey, clientKey: clientkey)
+        
+        // Register notification
+        registerForPushNotifications()
+        
         return true
     }
     
     // デバイストークンが取得されたら呼び出されるメソッド
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData){
-        // 端末情報を扱うNCMBInstallationのインスタンスを作成
-        let installation = NCMBInstallation.currentInstallation()
-        // デバイストークンの設定
-        installation.setDeviceTokenFromData(deviceToken)
-        // 端末情報をデータストアに登録
-        installation.saveInBackgroundWithBlock { (error: NSError!) -> Void in
-            if (error != nil){
-                // 端末情報の登録に失敗した時の処理
-                
-            }else{
-                // 端末情報の登録に成功した時の処理
-                
-            }
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
+        let token = tokenParts.joined()
+        print("Device Token: \(token)")
+        
+        let installation = NCMBInstallation()
+        installation.setDeviceTokenFromData(data: deviceToken)
+        installation.saveInBackground { (error) in
+            
         }
     }
-
 }
 ```
 
@@ -278,32 +257,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 * `.objectForKey()`で、指定したフィールドの中身を取り出すことができます
 
 ```Swift
-//installationの生成
-        let installation = NCMBInstallation.currentInstallation()
-        
+ func getInstallation() {
+        //installationの生成
+        let installation = NCMBInstallation.currentInstallation
         //ローカルのinstallationをfetchして更新
-        installation.fetchInBackgroundWithBlock { (error: NSError!) -> Void in
-            
-            if installation != nil{
-              //取得成功時の処理
-               print("取得成功:\(installation)")
-             }
-        }
+        installation.fetchInBackground(callback: { result in
+            switch result {
+                case .success:
+                    print("取得成功:\(installation)")
+                    DispatchQueue.main.async {
+                        self.updateTable()
+                    }
+                    
+                case let .failure(error):
+                    print(error)
+            }
+        })
+    }
 ```
 
 #### installation更新ロジック
 * `postInstallation`メソッド内で行います。
 * `.setObject()`で更新内容とフィールド名を指定し、`.saveInBackgroundWithBlock`で更新します
-```Swift
-        
-        installation!.saveInBackgroundWithBlock({( error: NSError!)-> Void in
-            if error != nil{
-                //installation更新失敗時の処理
-            } else {
-                //insitallation更新成功時の処理
-                print("installation更新に成功しました")
+```Swift 
+installation.saveInBackground(callback: { result in
+    switch result {
+        case .success:
+            //insitallation更新成功時の処理
+            print("installation更新に成功しました")
+        case let .failure(error):
+            //installation更新失敗時の処理
+            print("installation更新に失敗しました :\(error)")
+            
+            //アラートを出す
+            DispatchQueue.main.async {
+                let errAlert: UIAlertController = UIAlertController(title: "ERROR!", message: "installation更新に失敗しました", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default) { action in
+                }
+                errAlert.addAction(okAction)
+                self.present(errAlert, animated: true, completion: nil)
             }
-         })
+    }
+})
 ```
 * 更新後は自動でviewのリロードが実行され、更新内容が書き換わります
 
