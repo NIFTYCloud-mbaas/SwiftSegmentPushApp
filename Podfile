@@ -7,7 +7,7 @@ target 'SwiftSegmentPushApp' do
     
     # Pods for SwiftSegmentPushApp
     pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_swift'
-#    pod 'NCMB', :git => 'https://github.com/NIFCloud-mbaas/ncmb_swift', :branch => 'develop'
+#    pod 'NCMB', :git => 'https://github.com/NIFCLOUD-mbaas/ncmb_swift', :branch => 'develop'
     
 end
 
