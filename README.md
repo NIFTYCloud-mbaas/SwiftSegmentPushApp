@@ -8,7 +8,7 @@
 * 簡単な操作ですぐに [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます！！
 
 ## 目次
-* [ニフクラ mobile backendって何？？](#ニフクラmobilebackendって何？？)
+* [ニフクラ mobile backendって何？？](#ニフクラmobilebackendって何)
 * [プッシュ通知の仕組み](#プッシュ通知の仕組み)
 * [作業の手順](#作業の手順)
 * [コードの解説](#解説)
@@ -58,7 +58,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ![画像i002](/readme-img/i002.png)
 
 
-### 2. [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の会員登録とログイン→アプリ作成と設定
+### 2. ニフクラ-mobile-backendの会員登録とログイン→アプリ作成と設定
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 　
 ![画像3](/readme-img/003.png)
