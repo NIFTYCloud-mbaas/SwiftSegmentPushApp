@@ -21,8 +21,8 @@ class SwiftSegmentPushAppUITests: XCTestCase {
     var channels = "apple, orange"
     
     //********** APIキーの設定 **********
-    let applicationkey = "26d1dc5a7904734b7430878e4d427904a2e4a6bfb3134d9a7c91ff0fb446aab9"
-    let clientkey      = "3e75a0395e6d2bfeee0a4486ba3c37b1118d7004271d05feb4a017dfadce1b06"
+    let applicationkey = "YOUR-APPLICATION-KEY"
+    let clientkey      = "YOUR-CLIENT-KEY"
     
     // MARK: - Setup for UI Test
     override func setUp() {
